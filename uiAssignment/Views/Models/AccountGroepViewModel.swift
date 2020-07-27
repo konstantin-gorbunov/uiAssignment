@@ -18,6 +18,8 @@ struct AccountGroepViewModel {
         self.borderSides = borderSides
         name = accounts?[0].groupName
         totalAmount = accounts?.map { $0.amount }.reduce(.zero, +) ?? 0
-        accountViewModels = accounts?.map { AccountViewModel(name: $0.name, iban: $0.iban, amount: $0.amount) }
+        accountViewModels = accounts?.enumerated().map { (index, element) in
+            return AccountViewModel(name: element.name, iban: element.iban, amount: element.amount, separator: index > 0)
+        }
     }
 }

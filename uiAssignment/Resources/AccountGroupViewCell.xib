@@ -40,16 +40,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z0b-pW-Dj9">
-                                <rect key="frame" x="8" y="40" width="282" height="161"/>
+                                <rect key="frame" x="0.0" y="40" width="298" height="161"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="z0b-pW-Dj9" firstAttribute="top" secondItem="9eU-fc-u2W" secondAttribute="bottom" constant="12" id="4i0-57-YSa"/>
-                            <constraint firstItem="z0b-pW-Dj9" firstAttribute="leading" secondItem="DYX-od-g2Z" secondAttribute="leading" constant="8" id="9NY-uK-CBK"/>
+                            <constraint firstItem="z0b-pW-Dj9" firstAttribute="leading" secondItem="DYX-od-g2Z" secondAttribute="leading" id="9NY-uK-CBK"/>
                             <constraint firstItem="9eU-fc-u2W" firstAttribute="leading" secondItem="DYX-od-g2Z" secondAttribute="leading" constant="8" id="PLo-IC-c7z"/>
                             <constraint firstItem="9eU-fc-u2W" firstAttribute="top" secondItem="DYX-od-g2Z" secondAttribute="top" constant="8" id="afM-Ya-Ok7"/>
-                            <constraint firstAttribute="trailing" secondItem="z0b-pW-Dj9" secondAttribute="trailing" constant="8" id="bsj-9f-FRa"/>
+                            <constraint firstAttribute="trailing" secondItem="z0b-pW-Dj9" secondAttribute="trailing" id="bsj-9f-FRa"/>
                             <constraint firstAttribute="bottom" secondItem="z0b-pW-Dj9" secondAttribute="bottom" constant="8" id="ezn-j8-fsf"/>
                             <constraint firstAttribute="trailing" secondItem="9eU-fc-u2W" secondAttribute="trailing" constant="8" id="sy7-CO-4JK"/>
                         </constraints>

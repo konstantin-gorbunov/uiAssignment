@@ -10,4 +10,5 @@ struct AccountViewModel {
     let name: String
     let iban: String
     let amount: Int64
+    let separator: Bool
 }

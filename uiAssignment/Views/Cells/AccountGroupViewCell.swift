@@ -31,10 +31,9 @@ class AccountGroupViewCell: UICollectionViewCell, NibInstantiatable {
             
             accountStackView?.removeAllArrangedSubviews()
             viewModel.accountViewModels?.forEach {
-                // TODO: create and add AccountView to accountStackView
-                let label = UILabel()
-                label.text = $0.name
-                accountStackView?.addArrangedSubview(label)
+                let accountView = AccountView()
+                accountView.viewModel = $0
+                accountStackView?.addArrangedSubview(accountView)
             }
         }
     }

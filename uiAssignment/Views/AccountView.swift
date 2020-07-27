@@ -9,19 +9,82 @@
 import UIKit
 
 class AccountView: UIView {
-    @IBOutlet private weak var accountImageView: UIImageView?
-    @IBOutlet private weak var nameLabel: UILabel?
-    @IBOutlet private weak var ibanLabel: UILabel?
-    @IBOutlet private weak var amountLabel: UILabel?
+    
+    private enum Constants {
+        static let accountImage = UIImage(named: "first")
+        static let imageLeading: CGFloat = 3.0
+        static let titleLeading: CGFloat = 8.0
+        static let titleStackViewSpacing: CGFloat = 2.0
+        static let amountTrailing: CGFloat = -8.0
+        static let imageSize = CGSize(width: 40, height: 40)
+    }
+    
+    private let accountImageView = UIImageView(image: Constants.accountImage)
+    private let nameLabel = UILabel()
+    private let ibanLabel = UILabel()
+    private let amountLabel = UILabel()
+    private let separator = UIView()
     
     var viewModel: AccountViewModel? {
         didSet {
             guard let viewModel = viewModel else {
                 return
             }
-            nameLabel?.text = viewModel.name
-            ibanLabel?.text = viewModel.iban
-            amountLabel?.text = String(viewModel.amount)
+            nameLabel.text = viewModel.name
+            ibanLabel.text = viewModel.iban
+            separator.isHidden = !viewModel.separator
+            amountLabel.text = String(viewModel.amount)
         }
+    }
+    
+    convenience init(_ viewModel: AccountViewModel) {
+        self.init()
+        self.viewModel = viewModel
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        translatesAutoresizingMaskIntoConstraints = false
+        setupElements()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - private
+    
+    private func setupElements() {
+        separator.translatesAutoresizingMaskIntoConstraints = false
+        separator.backgroundColor = .darkGray
+        addSubview(separator)
+        separator.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
+        separator.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.87).isActive = true
+        separator.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        separator.isHidden = true
+
+        accountImageView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(accountImageView)
+        accountImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.imageLeading).isActive = true
+        accountImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        accountImageView.widthAnchor.constraint(equalToConstant: Constants.imageSize.width).isActive = true
+        accountImageView.heightAnchor.constraint(equalToConstant: Constants.imageSize.height).isActive = true
+        
+        amountLabel.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(amountLabel)
+        amountLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: Constants.amountTrailing).isActive = true
+        amountLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        ibanLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let titleStackView = UIStackView.init(arrangedSubviews: [nameLabel, ibanLabel])
+        titleStackView.translatesAutoresizingMaskIntoConstraints = false
+        titleStackView.axis = .vertical
+        titleStackView.distribution = .fillProportionally
+        titleStackView.spacing = Constants.titleStackViewSpacing
+        addSubview(titleStackView)
+        titleStackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        titleStackView.leadingAnchor.constraint(equalTo: accountImageView.trailingAnchor, constant: Constants.titleLeading).isActive = true
     }
 }
