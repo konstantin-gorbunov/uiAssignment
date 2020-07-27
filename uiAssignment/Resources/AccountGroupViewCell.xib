@@ -19,17 +19,17 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYX-od-g2Z" customClass="BorderedView" customModule="uiAssignment" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="298" height="209"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9eU-fc-u2W">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9eU-fc-u2W">
                                 <rect key="frame" x="8" y="8" width="282" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbb-rG-uLL" userLabel="Title Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vd-aW-qMp" userLabel="Title Label">
-                                        <rect key="frame" x="183.5" y="0.0" width="98.5" height="20"/>
+                                        <rect key="frame" x="225" y="0.0" width="57" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -39,8 +39,8 @@
                                     <constraint firstAttribute="height" constant="20" id="PEQ-dQ-7ix"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z0b-pW-Dj9">
-                                <rect key="frame" x="0.0" y="40" width="298" height="161"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="z0b-pW-Dj9">
+                                <rect key="frame" x="0.0" y="40" width="298" height="165"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,7 +50,7 @@
                             <constraint firstItem="9eU-fc-u2W" firstAttribute="leading" secondItem="DYX-od-g2Z" secondAttribute="leading" constant="8" id="PLo-IC-c7z"/>
                             <constraint firstItem="9eU-fc-u2W" firstAttribute="top" secondItem="DYX-od-g2Z" secondAttribute="top" constant="8" id="afM-Ya-Ok7"/>
                             <constraint firstAttribute="trailing" secondItem="z0b-pW-Dj9" secondAttribute="trailing" id="bsj-9f-FRa"/>
-                            <constraint firstAttribute="bottom" secondItem="z0b-pW-Dj9" secondAttribute="bottom" constant="8" id="ezn-j8-fsf"/>
+                            <constraint firstAttribute="bottom" secondItem="z0b-pW-Dj9" secondAttribute="bottom" constant="4" id="ezn-j8-fsf"/>
                             <constraint firstAttribute="trailing" secondItem="9eU-fc-u2W" secondAttribute="trailing" constant="8" id="sy7-CO-4JK"/>
                         </constraints>
                     </view>

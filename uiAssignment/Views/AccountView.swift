@@ -17,6 +17,7 @@ class AccountView: UIView {
         static let titleStackViewSpacing: CGFloat = 2.0
         static let amountTrailing: CGFloat = -8.0
         static let imageSize = CGSize(width: 40, height: 40)
+        static let viewHeight: CGFloat = 55.0
     }
     
     private let accountImageView = UIImageView(image: Constants.accountImage)
@@ -45,6 +46,7 @@ class AccountView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: Constants.viewHeight).isActive = true
         setupElements()
     }
     

@@ -34,7 +34,7 @@ class BaseCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        flowLayout?.itemSize = CGSize(width: Constants.cellWidth(in: self.view) , height: Constants.cellHeight)
+        flowLayout?.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         flowLayout?.minimumLineSpacing = Constants.lineSpacing
         flowLayout?.minimumInteritemSpacing = Constants.rowSpacing
 
