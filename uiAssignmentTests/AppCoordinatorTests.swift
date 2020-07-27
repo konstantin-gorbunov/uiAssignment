@@ -36,7 +36,7 @@ class AppCoordinatorTests: XCTestCase {
         coordinator?.start()
 
         // Check total count
-        XCTAssertEqual(coordinator?.childCoordinators.count, 1)
+        XCTAssertEqual(coordinator?.childCoordinators.count, 5)
 
         // Home is created
         XCTAssertNotNil(
