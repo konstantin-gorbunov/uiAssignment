@@ -40,11 +40,11 @@
 		8B321D3524CDDCED003E4AD7 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B321D3424CDDCED003E4AD7 /* ErrorViewController.xib */; };
 		8B321D3724CDDD1B003E4AD7 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3624CDDD1B003E4AD7 /* ErrorViewController.swift */; };
 		8B321D3924CE026F003E4AD7 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3824CE026F003E4AD7 /* BaseCollectionViewController.swift */; };
-		8B321D3C24CE02EF003E4AD7 /* AccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3B24CE02EF003E4AD7 /* AccountViewCell.swift */; };
+		8B321D3C24CE02EF003E4AD7 /* AccountGroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3B24CE02EF003E4AD7 /* AccountGroupViewCell.swift */; };
 		8B321D4124CE03F5003E4AD7 /* BorderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3F24CE03F5003E4AD7 /* BorderLayer.swift */; };
 		8B321D4224CE03F5003E4AD7 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4024CE03F5003E4AD7 /* BorderedView.swift */; };
-		8B321D4524CE22C6003E4AD7 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4424CE22C6003E4AD7 /* AccountViewModel.swift */; };
-		8B321D4724CE237A003E4AD7 /* AccountViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B321D4624CE237A003E4AD7 /* AccountViewCell.xib */; };
+		8B321D4524CE22C6003E4AD7 /* AccountGroepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4424CE22C6003E4AD7 /* AccountGroepViewModel.swift */; };
+		8B321D4724CE237A003E4AD7 /* AccountGroupViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B321D4624CE237A003E4AD7 /* AccountGroupViewCell.xib */; };
 		8B321D4924CE2AC1003E4AD7 /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4824CE2AC1003E4AD7 /* AccountListViewModel.swift */; };
 		8B321D4B24CE95EE003E4AD7 /* accounts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8B321D4A24CE95EE003E4AD7 /* accounts.csv */; };
 		8B321D4C24CE98FB003E4AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0500DE24CDBD8000DAB4EE /* AppDelegate.swift */; };
@@ -52,14 +52,17 @@
 		8B321D5024CEA1D1003E4AD7 /* MockDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4F24CEA1D1003E4AD7 /* MockDependency.swift */; };
 		8B321D5424CEA1EB003E4AD7 /* CSVDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D5324CEA1EB003E4AD7 /* CSVDecoderTests.swift */; };
 		8B321D5524CEA4BE003E4AD7 /* HomeCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D5124CEA1DF003E4AD7 /* HomeCoordinatorTests.swift */; };
+		8B7D14F424CEFEF5002D98FE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */; };
+		8B7D14F524CEFEF5002D98FE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */; };
+		8B7D14FB24CF0A5A002D98FE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14FA24CF0A5A002D98FE /* AccountView.swift */; };
 		8BD7BFCF24CEB4DB003296DC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D2924CDDAE2003E4AD7 /* LoadingViewController.swift */; };
 		8BD7BFD024CEB4E6003296DC /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3624CDDD1B003E4AD7 /* ErrorViewController.swift */; };
 		8BD7BFD124CEB4F5003296DC /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4824CE2AC1003E4AD7 /* AccountListViewModel.swift */; };
 		8BD7BFD224CEB4FE003296DC /* AccountsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0500E224CDBD8000DAB4EE /* AccountsCollectionViewController.swift */; };
 		8BD7BFD324CEB56E003296DC /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3824CE026F003E4AD7 /* BaseCollectionViewController.swift */; };
-		8BD7BFD424CEB579003296DC /* AccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3B24CE02EF003E4AD7 /* AccountViewCell.swift */; };
+		8BD7BFD424CEB579003296DC /* AccountGroupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3B24CE02EF003E4AD7 /* AccountGroupViewCell.swift */; };
 		8BD7BFD524CEB581003296DC /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4024CE03F5003E4AD7 /* BorderedView.swift */; };
-		8BD7BFD624CEB587003296DC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4424CE22C6003E4AD7 /* AccountViewModel.swift */; };
+		8BD7BFD624CEB587003296DC /* AccountGroepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4424CE22C6003E4AD7 /* AccountGroepViewModel.swift */; };
 		8BD7BFD724CEB590003296DC /* BorderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3F24CE03F5003E4AD7 /* BorderLayer.swift */; };
 		8BD7BFD924CECB32003296DC /* PaymentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7BFD824CECB32003296DC /* PaymentCoordinator.swift */; };
 		8BD7BFDA24CECB57003296DC /* PaymentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7BFD824CECB32003296DC /* PaymentCoordinator.swift */; };
@@ -109,17 +112,19 @@
 		8B321D3424CDDCED003E4AD7 /* ErrorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
 		8B321D3624CDDD1B003E4AD7 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		8B321D3824CE026F003E4AD7 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
-		8B321D3B24CE02EF003E4AD7 /* AccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCell.swift; sourceTree = "<group>"; };
+		8B321D3B24CE02EF003E4AD7 /* AccountGroupViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountGroupViewCell.swift; sourceTree = "<group>"; };
 		8B321D3F24CE03F5003E4AD7 /* BorderLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderLayer.swift; sourceTree = "<group>"; };
 		8B321D4024CE03F5003E4AD7 /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
-		8B321D4424CE22C6003E4AD7 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		8B321D4624CE237A003E4AD7 /* AccountViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewCell.xib; sourceTree = "<group>"; };
+		8B321D4424CE22C6003E4AD7 /* AccountGroepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountGroepViewModel.swift; sourceTree = "<group>"; };
+		8B321D4624CE237A003E4AD7 /* AccountGroupViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountGroupViewCell.xib; sourceTree = "<group>"; };
 		8B321D4824CE2AC1003E4AD7 /* AccountListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewModel.swift; sourceTree = "<group>"; };
 		8B321D4A24CE95EE003E4AD7 /* accounts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accounts.csv; sourceTree = "<group>"; };
 		8B321D4D24CEA1C2003E4AD7 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		8B321D4F24CEA1D1003E4AD7 /* MockDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDependency.swift; sourceTree = "<group>"; };
 		8B321D5124CEA1DF003E4AD7 /* HomeCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorTests.swift; sourceTree = "<group>"; };
 		8B321D5324CEA1EB003E4AD7 /* CSVDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVDecoderTests.swift; sourceTree = "<group>"; };
+		8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		8B7D14FA24CF0A5A002D98FE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		8BD7BFD824CECB32003296DC /* PaymentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCoordinator.swift; sourceTree = "<group>"; };
 		8BD7BFDB24CECB6F003296DC /* InsightsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsCoordinator.swift; sourceTree = "<group>"; };
 		8BD7BFDE24CECB89003296DC /* CardsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCoordinator.swift; sourceTree = "<group>"; };
@@ -253,6 +258,7 @@
 				8B321D3624CDDD1B003E4AD7 /* ErrorViewController.swift */,
 				8B321D4024CE03F5003E4AD7 /* BorderedView.swift */,
 				8B321D3F24CE03F5003E4AD7 /* BorderLayer.swift */,
+				8B7D14FA24CF0A5A002D98FE /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,7 +268,7 @@
 			children = (
 				8B321D4A24CE95EE003E4AD7 /* accounts.csv */,
 				8B0500E924CDBD8400DAB4EE /* Assets.xcassets */,
-				8B321D4624CE237A003E4AD7 /* AccountViewCell.xib */,
+				8B321D4624CE237A003E4AD7 /* AccountGroupViewCell.xib */,
 				8B321D3424CDDCED003E4AD7 /* ErrorViewController.xib */,
 				8B321D3124CDDCAF003E4AD7 /* LoadingViewController.xib */,
 				8B0500EB24CDBD8400DAB4EE /* LaunchScreen.storyboard */,
@@ -282,7 +288,7 @@
 		8B321D3A24CE02BF003E4AD7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				8B321D3B24CE02EF003E4AD7 /* AccountViewCell.swift */,
+				8B321D3B24CE02EF003E4AD7 /* AccountGroupViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -291,7 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				8B321D4824CE2AC1003E4AD7 /* AccountListViewModel.swift */,
-				8B321D4424CE22C6003E4AD7 /* AccountViewModel.swift */,
+				8B321D4424CE22C6003E4AD7 /* AccountGroepViewModel.swift */,
+				8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -380,7 +387,7 @@
 				8B0500ED24CDBD8400DAB4EE /* LaunchScreen.storyboard in Resources */,
 				8B0500EA24CDBD8400DAB4EE /* Assets.xcassets in Resources */,
 				8B321D4B24CE95EE003E4AD7 /* accounts.csv in Resources */,
-				8B321D4724CE237A003E4AD7 /* AccountViewCell.xib in Resources */,
+				8B321D4724CE237A003E4AD7 /* AccountGroupViewCell.xib in Resources */,
 				8B321D3524CDDCED003E4AD7 /* ErrorViewController.xib in Resources */,
 				8B321D3224CDDCB0003E4AD7 /* LoadingViewController.xib in Resources */,
 			);
@@ -406,6 +413,7 @@
 				8B321D2F24CDDC5E003E4AD7 /* Instantiatable.swift in Sources */,
 				8B321D4124CE03F5003E4AD7 /* BorderLayer.swift in Sources */,
 				8BD7BFDF24CECB89003296DC /* CardsCoordinator.swift in Sources */,
+				8B7D14FB24CF0A5A002D98FE /* AccountView.swift in Sources */,
 				8B321D2A24CDDAE2003E4AD7 /* LoadingViewController.swift in Sources */,
 				8BD7BFE224CECBA3003296DC /* MoreCoordinator.swift in Sources */,
 				8B321D0B24CDD044003E4AD7 /* Coordinator.swift in Sources */,
@@ -420,9 +428,10 @@
 				8B321D1C24CDD20C003E4AD7 /* UnkeyedContainer.swift in Sources */,
 				8B321D0824CDD024003E4AD7 /* AppCoordinator.swift in Sources */,
 				8B321D0424CDCDC6003E4AD7 /* AppDependency.swift in Sources */,
-				8B321D3C24CE02EF003E4AD7 /* AccountViewCell.swift in Sources */,
+				8B321D3C24CE02EF003E4AD7 /* AccountGroupViewCell.swift in Sources */,
 				8BD7BFE524CECBD6003296DC /* NotSelectableTabBarController.swift in Sources */,
-				8B321D4524CE22C6003E4AD7 /* AccountViewModel.swift in Sources */,
+				8B7D14F424CEFEF5002D98FE /* AccountViewModel.swift in Sources */,
+				8B321D4524CE22C6003E4AD7 /* AccountGroepViewModel.swift in Sources */,
 				8B321D2324CDD253003E4AD7 /* Account.swift in Sources */,
 				8B321D2024CDD20C003E4AD7 /* CSVDecoder.swift in Sources */,
 				8B321D3724CDDD1B003E4AD7 /* ErrorViewController.swift in Sources */,
@@ -437,13 +446,14 @@
 				8B321D0C24CDD044003E4AD7 /* Coordinator.swift in Sources */,
 				8BD7BFD024CEB4E6003296DC /* ErrorViewController.swift in Sources */,
 				8B321D1F24CDD20C003E4AD7 /* Header.swift in Sources */,
-				8BD7BFD424CEB579003296DC /* AccountViewCell.swift in Sources */,
+				8BD7BFD424CEB579003296DC /* AccountGroupViewCell.swift in Sources */,
 				8B321D1D24CDD20C003E4AD7 /* UnkeyedContainer.swift in Sources */,
 				8B321D5524CEA4BE003E4AD7 /* HomeCoordinatorTests.swift in Sources */,
-				8BD7BFD624CEB587003296DC /* AccountViewModel.swift in Sources */,
+				8BD7BFD624CEB587003296DC /* AccountGroepViewModel.swift in Sources */,
 				8B321D2124CDD20C003E4AD7 /* CSVDecoder.swift in Sources */,
 				8BD7BFD524CEB581003296DC /* BorderedView.swift in Sources */,
 				8BD7BFCF24CEB4DB003296DC /* LoadingViewController.swift in Sources */,
+				8B7D14F524CEFEF5002D98FE /* AccountViewModel.swift in Sources */,
 				8BD7BFE624CECBD6003296DC /* NotSelectableTabBarController.swift in Sources */,
 				8B321D4C24CE98FB003E4AD7 /* AppDelegate.swift in Sources */,
 				8BD7BFDA24CECB57003296DC /* PaymentCoordinator.swift in Sources */,

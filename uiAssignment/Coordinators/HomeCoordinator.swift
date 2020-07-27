@@ -44,7 +44,7 @@ class HomeCoordinator<T: Dependency>: Coordinator<T>, RootViewProvider {
         }
 
         let accountsViewController =  AccountsCollectionViewController(
-            viewModel: AccountListViewModel(accounts: accounts),
+            viewModel: AccountListViewModel(accounts),
             layout: UICollectionViewFlowLayout()
         )
         accountsViewController.title = title
@@ -55,7 +55,7 @@ class HomeCoordinator<T: Dependency>: Coordinator<T>, RootViewProvider {
 
 extension HomeCoordinator: AccountCollectionViewDelegate {
 
-    func didSelectAccount(_ account: Account) {
-        debugPrint("\(self) didSelectAccount")
+    func didSelectAccountGroup(_ accountGroup: [Account]) {
+        debugPrint("\(self) didSelectAccountGroup")
     }
 }

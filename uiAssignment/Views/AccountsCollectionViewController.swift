@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AccountCollectionViewDelegate: class {
-    func didSelectAccount(_ account: Account)
+    func didSelectAccountGroup(_ accountGroup: [Account])
 }
 
 class AccountsCollectionViewController: BaseCollectionViewController {
@@ -26,20 +26,23 @@ class AccountsCollectionViewController: BaseCollectionViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func configureCell(_ cell: AccountViewCell, at indexPath: IndexPath) {
-        let account = viewModel.accounts[indexPath.row]
-        cell.viewModel = AccountViewModel(
-            account,
+    override func configureCell(_ cell: AccountGroupViewCell, at indexPath: IndexPath) {
+        let groupID = viewModel.accountsGroupsId[indexPath.row]
+        let accountGroup = viewModel.accountGroups[groupID]
+        cell.viewModel = AccountGroepViewModel(
+            accountGroup,
             borderSides: BorderLayer.Side.border(at: indexPath)
         )
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.accounts.count
+        return viewModel.accountGroups.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didSelectAccount(viewModel.accounts[indexPath.row])
+        let groupID = viewModel.accountsGroupsId[indexPath.row]
+        guard let accountGroup = viewModel.accountGroups[groupID] else { return }
+        delegate?.didSelectAccountGroup(accountGroup)
     }
 }
 

@@ -27,7 +27,7 @@ class BaseCollectionViewController: UICollectionViewController {
         return collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
     }
 
-    func configureCell(_ cell: AccountViewCell, at indexPath: IndexPath) {
+    func configureCell(_ cell: AccountGroupViewCell, at indexPath: IndexPath) {
         /* Call in subclass to configure Cell */
     }
 
@@ -40,7 +40,7 @@ class BaseCollectionViewController: UICollectionViewController {
 
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = .lightGray
-        collectionView?.register(AccountViewCell.self)
+        collectionView?.register(AccountGroupViewCell.self)
     }
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -52,7 +52,7 @@ class BaseCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: AccountViewCell = collectionView.dequeue(at: indexPath)
+        let cell: AccountGroupViewCell = collectionView.dequeue(at: indexPath)
         configureCell(cell, at: indexPath)
         return cell
     }

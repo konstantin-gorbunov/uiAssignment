@@ -10,7 +10,13 @@ import Foundation
 
 struct AccountListViewModel {
     /// List of Accounts
-    let accounts: [Account]
+    let accountsGroupsId: [Int64]
+    let accountGroups: [Int64: [Account]]
+    
+    init(_ accounts: [Account]) {
+        accountGroups = Dictionary(grouping: accounts, by: { $0.groupId })
+        accountsGroupsId = Array(accountGroups.keys).sorted(by: { $0 < $1 })
+    }
 }
 
 extension BorderLayer.Side {
