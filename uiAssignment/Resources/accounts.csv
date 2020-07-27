@@ -1,0 +1,7 @@
+"Account group id","Account group name","Account name","IBAN","Amount"
+"100","Current Accounts","Current Account","NL25 TRIO 0253 8443 20",150000
+"100","Current Accounts","Joint Account","NL25 TRIO 0269 8445 60",100000
+"200","Savings Accounts","Savings Account","NL81 TRIO 0212 4710 66",0
+"300","Term Deposits","My Term Deposit","NL81 TRIO 0212 4710 36",1321011
+"400","Loans","Our home loan","NL81 TRIO 0112 4710 66",15000000
+"400","Loans","Credit card","NL81 TRIO 0122 4710 66",-12302
