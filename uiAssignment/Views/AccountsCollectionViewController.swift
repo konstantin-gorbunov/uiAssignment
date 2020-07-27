@@ -17,9 +17,10 @@ class AccountsCollectionViewController: BaseCollectionViewController {
     private let viewModel: AccountListViewModel
     weak var delegate: AccountCollectionViewDelegate?
 
-    init(viewModel: AccountListViewModel, layout: UICollectionViewLayout) {
+    init(viewModel: AccountListViewModel, headerViewModel: HeaderViewModel?, layout: UICollectionViewLayout) {
         self.viewModel = viewModel
         super.init(collectionViewLayout: layout)
+        self.headerViewModel = headerViewModel
     }
 
     required init?(coder aDecoder: NSCoder) {

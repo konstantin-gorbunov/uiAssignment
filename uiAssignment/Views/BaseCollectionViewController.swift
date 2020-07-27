@@ -14,7 +14,7 @@ class BaseCollectionViewController: UICollectionViewController {
         static let itemsInRow = 1
         static let lineSpacing: CGFloat = 0
         static let rowSpacing: CGFloat = 0
-        static let cellHeight: CGFloat = 160
+        static let headerHeight: CGFloat = 240
 
         static func cellWidth(in view: UIView) -> CGFloat {
             assert(itemsInRow >= 0)
@@ -22,6 +22,8 @@ class BaseCollectionViewController: UICollectionViewController {
             return availableWidth / CGFloat(itemsInRow)
         }
     }
+    
+    var headerViewModel: HeaderViewModel?
 
     var flowLayout: UICollectionViewFlowLayout? {
         return collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
@@ -37,10 +39,12 @@ class BaseCollectionViewController: UICollectionViewController {
         flowLayout?.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         flowLayout?.minimumLineSpacing = Constants.lineSpacing
         flowLayout?.minimumInteritemSpacing = Constants.rowSpacing
+        flowLayout?.headerReferenceSize = CGSize(width: self.collectionView.frame.size.width, height: Constants.headerHeight)
 
         collectionView?.alwaysBounceVertical = true
-        collectionView?.backgroundColor = .lightGray
-        collectionView?.register(AccountGroupViewCell.self)
+        collectionView?.backgroundColor = .white
+        collectionView?.registerForCell(AccountGroupViewCell.self)
+        collectionView?.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderView.reuseIdentifier)
     }
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -52,8 +56,24 @@ class BaseCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: AccountGroupViewCell = collectionView.dequeue(at: indexPath)
+        let cell: AccountGroupViewCell = collectionView.dequeueCell(at: indexPath)
         configureCell(cell, at: indexPath)
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderView.reuseIdentifier, for: indexPath)
+            if let headerView = headerView as? HeaderView {
+                headerView.viewModel = headerViewModel
+            }
+            return headerView
+        case UICollectionView.elementKindSectionFooter:
+            assert(false, "Unexpected element kind")
+        default:
+            assert(false, "Unexpected element kind")
+        }
     }
 }

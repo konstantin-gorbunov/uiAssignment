@@ -55,6 +55,9 @@
 		8B7D14F424CEFEF5002D98FE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */; };
 		8B7D14F524CEFEF5002D98FE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */; };
 		8B7D14FB24CF0A5A002D98FE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14FA24CF0A5A002D98FE /* AccountView.swift */; };
+		8B7D14FD24CF3FB5002D98FE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14FC24CF3FB5002D98FE /* HeaderView.swift */; };
+		8B7D14FF24CF50FE002D98FE /* LearnMoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14FE24CF50FE002D98FE /* LearnMoreButton.swift */; };
+		8B7D150124CF54AA002D98FE /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150024CF54AA002D98FE /* HeaderViewModel.swift */; };
 		8BD7BFCF24CEB4DB003296DC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D2924CDDAE2003E4AD7 /* LoadingViewController.swift */; };
 		8BD7BFD024CEB4E6003296DC /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3624CDDD1B003E4AD7 /* ErrorViewController.swift */; };
 		8BD7BFD124CEB4F5003296DC /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4824CE2AC1003E4AD7 /* AccountListViewModel.swift */; };
@@ -125,6 +128,9 @@
 		8B321D5324CEA1EB003E4AD7 /* CSVDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVDecoderTests.swift; sourceTree = "<group>"; };
 		8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		8B7D14FA24CF0A5A002D98FE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		8B7D14FC24CF3FB5002D98FE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8B7D14FE24CF50FE002D98FE /* LearnMoreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreButton.swift; sourceTree = "<group>"; };
+		8B7D150024CF54AA002D98FE /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
 		8BD7BFD824CECB32003296DC /* PaymentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCoordinator.swift; sourceTree = "<group>"; };
 		8BD7BFDB24CECB6F003296DC /* InsightsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsCoordinator.swift; sourceTree = "<group>"; };
 		8BD7BFDE24CECB89003296DC /* CardsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCoordinator.swift; sourceTree = "<group>"; };
@@ -259,6 +265,8 @@
 				8B321D4024CE03F5003E4AD7 /* BorderedView.swift */,
 				8B321D3F24CE03F5003E4AD7 /* BorderLayer.swift */,
 				8B7D14FA24CF0A5A002D98FE /* AccountView.swift */,
+				8B7D14FC24CF3FB5002D98FE /* HeaderView.swift */,
+				8B7D14FE24CF50FE002D98FE /* LearnMoreButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +307,7 @@
 				8B321D4824CE2AC1003E4AD7 /* AccountListViewModel.swift */,
 				8B321D4424CE22C6003E4AD7 /* AccountGroepViewModel.swift */,
 				8B7D14F324CEFEF5002D98FE /* AccountViewModel.swift */,
+				8B7D150024CF54AA002D98FE /* HeaderViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -412,6 +421,7 @@
 				8B0500DF24CDBD8000DAB4EE /* AppDelegate.swift in Sources */,
 				8B321D2F24CDDC5E003E4AD7 /* Instantiatable.swift in Sources */,
 				8B321D4124CE03F5003E4AD7 /* BorderLayer.swift in Sources */,
+				8B7D150124CF54AA002D98FE /* HeaderViewModel.swift in Sources */,
 				8BD7BFDF24CECB89003296DC /* CardsCoordinator.swift in Sources */,
 				8B7D14FB24CF0A5A002D98FE /* AccountView.swift in Sources */,
 				8B321D2A24CDDAE2003E4AD7 /* LoadingViewController.swift in Sources */,
@@ -428,10 +438,12 @@
 				8B321D1C24CDD20C003E4AD7 /* UnkeyedContainer.swift in Sources */,
 				8B321D0824CDD024003E4AD7 /* AppCoordinator.swift in Sources */,
 				8B321D0424CDCDC6003E4AD7 /* AppDependency.swift in Sources */,
+				8B7D14FF24CF50FE002D98FE /* LearnMoreButton.swift in Sources */,
 				8B321D3C24CE02EF003E4AD7 /* AccountGroupViewCell.swift in Sources */,
 				8BD7BFE524CECBD6003296DC /* NotSelectableTabBarController.swift in Sources */,
 				8B7D14F424CEFEF5002D98FE /* AccountViewModel.swift in Sources */,
 				8B321D4524CE22C6003E4AD7 /* AccountGroepViewModel.swift in Sources */,
+				8B7D14FD24CF3FB5002D98FE /* HeaderView.swift in Sources */,
 				8B321D2324CDD253003E4AD7 /* Account.swift in Sources */,
 				8B321D2024CDD20C003E4AD7 /* CSVDecoder.swift in Sources */,
 				8B321D3724CDDD1B003E4AD7 /* ErrorViewController.swift in Sources */,

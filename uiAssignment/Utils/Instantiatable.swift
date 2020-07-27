@@ -29,14 +29,14 @@ extension NibInstantiatable where Self: UICollectionViewCell {
 }
 
 extension UICollectionView {
-    func register(_ instantiatable: NibInstantiatable.Type) {
+    func registerForCell(_ instantiatable: NibInstantiatable.Type) {
         self.register(
             UINib(nibName: instantiatable.nibIdentifier, bundle: nil),
             forCellWithReuseIdentifier: instantiatable.nibIdentifier
         )
     }
-
-    func dequeue<T: NibInstantiatable>(at indexPath: IndexPath) -> T where T: UICollectionViewCell {
+    
+    func dequeueCell<T: NibInstantiatable>(at indexPath: IndexPath) -> T where T: UICollectionViewCell {
         return T.dequeue(in: self, at: indexPath)
     }
 }

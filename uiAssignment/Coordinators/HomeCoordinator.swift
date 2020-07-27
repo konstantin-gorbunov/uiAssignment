@@ -45,6 +45,7 @@ class HomeCoordinator<T: Dependency>: Coordinator<T>, RootViewProvider {
 
         let accountsViewController = AccountsCollectionViewController(
             viewModel: AccountListViewModel(accounts),
+            headerViewModel: HeaderViewModel(totalAmount: 375000),
             layout: UICollectionViewFlowLayout()
         )
         accountsViewController.title = title
