@@ -14,7 +14,7 @@ class HeaderView: UICollectionReusableView {
     
     var viewModel: HeaderViewModel? {
         didSet {
-            totalBalance.text = String(viewModel?.totalAmount ?? 0)
+            totalBalance.amount = viewModel?.totalAmount ?? 0
         }
     }
     
@@ -45,7 +45,7 @@ class HeaderView: UICollectionReusableView {
     private let textLabel = UILabel()
     private let learnMoreButton = LearnMoreButton()
     private let totalBalanceLabel = UILabel()
-    private let totalBalance = UILabel()
+    private let totalBalance = AmountTextView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

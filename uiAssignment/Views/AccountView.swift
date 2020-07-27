@@ -23,7 +23,7 @@ class AccountView: UIView {
     private let accountImageView = UIImageView(image: Constants.accountImage)
     private let nameLabel = UILabel()
     private let ibanLabel = UILabel()
-    private let amountLabel = UILabel()
+    private let amountLabel = AmountTextView()
     private let separator = UIView()
     
     var viewModel: AccountViewModel? {
@@ -33,8 +33,8 @@ class AccountView: UIView {
             }
             nameLabel.text = viewModel.name
             ibanLabel.text = viewModel.iban
-            separator.isHidden = !viewModel.separator
-            amountLabel.text = String(viewModel.amount)
+            separator.isHidden = viewModel.separator ? false : true
+            amountLabel.amount = viewModel.amount
         }
     }
     

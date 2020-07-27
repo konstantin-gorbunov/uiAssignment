@@ -18,7 +18,7 @@ class AccountGroupViewCell: UICollectionViewCell, NibInstantiatable {
 
     @IBOutlet private weak var accountStackView: UIStackView?
     @IBOutlet private weak var groupNameLabel: UILabel?
-    @IBOutlet private weak var amountLabel: UILabel?
+    @IBOutlet private weak var amountLabel: AmountTextView?
 
     var viewModel: AccountGroepViewModel? {
         didSet {
@@ -26,7 +26,7 @@ class AccountGroupViewCell: UICollectionViewCell, NibInstantiatable {
                 return
             }
             groupNameLabel?.text = viewModel.name
-            amountLabel?.text = String(viewModel.totalAmount)
+            amountLabel?.amount = viewModel.totalAmount
             borderedView?.borderSides = viewModel.borderSides
             
             accountStackView?.removeAllArrangedSubviews()
