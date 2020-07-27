@@ -43,7 +43,7 @@ class HomeCoordinator<T: Dependency>: Coordinator<T>, RootViewProvider {
             return
         }
 
-        let accountsViewController =  AccountsCollectionViewController(
+        let accountsViewController = AccountsCollectionViewController(
             viewModel: AccountListViewModel(accounts),
             layout: UICollectionViewFlowLayout()
         )

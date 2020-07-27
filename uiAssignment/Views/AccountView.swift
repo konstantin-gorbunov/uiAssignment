@@ -77,6 +77,7 @@ class AccountView: UIView {
         amountLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: Constants.amountTrailing).isActive = true
         amountLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         
+        nameLabel.font = nameLabel.font.bold()
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         ibanLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -88,5 +89,14 @@ class AccountView: UIView {
         addSubview(titleStackView)
         titleStackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         titleStackView.leadingAnchor.constraint(equalTo: accountImageView.trailingAnchor, constant: Constants.titleLeading).isActive = true
+    }
+}
+
+extension UIFont {
+    func bold() -> UIFont {
+        guard let descriptor = self.fontDescriptor.withSymbolicTraits(UIFontDescriptor.SymbolicTraits.traitBold) else {
+            return self
+        }
+        return UIFont(descriptor: descriptor, size: 0)
     }
 }
