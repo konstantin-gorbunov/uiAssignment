@@ -61,6 +61,7 @@
 		8B7D150324CF6A21002D98FE /* AmountText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150224CF6A21002D98FE /* AmountText.swift */; };
 		8B7D150524CF7E70002D98FE /* AmountTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150424CF7E70002D98FE /* AmountTextModel.swift */; };
 		8B7D150724CF8955002D98FE /* AmountTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150624CF8955002D98FE /* AmountTextView.swift */; };
+		8BC34EE224CF9F1C0019E307 /* AccountTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC34EE124CF9F1C0019E307 /* AccountTitle.swift */; };
 		8BD7BFCF24CEB4DB003296DC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D2924CDDAE2003E4AD7 /* LoadingViewController.swift */; };
 		8BD7BFD024CEB4E6003296DC /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D3624CDDD1B003E4AD7 /* ErrorViewController.swift */; };
 		8BD7BFD124CEB4F5003296DC /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D4824CE2AC1003E4AD7 /* AccountListViewModel.swift */; };
@@ -137,6 +138,7 @@
 		8B7D150224CF6A21002D98FE /* AmountText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountText.swift; sourceTree = "<group>"; };
 		8B7D150424CF7E70002D98FE /* AmountTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTextModel.swift; sourceTree = "<group>"; };
 		8B7D150624CF8955002D98FE /* AmountTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTextView.swift; sourceTree = "<group>"; };
+		8BC34EE124CF9F1C0019E307 /* AccountTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTitle.swift; sourceTree = "<group>"; };
 		8BD7BFD824CECB32003296DC /* PaymentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCoordinator.swift; sourceTree = "<group>"; };
 		8BD7BFDB24CECB6F003296DC /* InsightsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsCoordinator.swift; sourceTree = "<group>"; };
 		8BD7BFDE24CECB89003296DC /* CardsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCoordinator.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				8B7D150224CF6A21002D98FE /* AmountText.swift */,
 				8B7D150424CF7E70002D98FE /* AmountTextModel.swift */,
 				8B7D150624CF8955002D98FE /* AmountTextView.swift */,
+				8BC34EE124CF9F1C0019E307 /* AccountTitle.swift */,
 			);
 			path = uiAssignment;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				8B321D1E24CDD20C003E4AD7 /* Header.swift in Sources */,
 				8B7D150724CF8955002D98FE /* AmountTextView.swift in Sources */,
 				8B321D3924CE026F003E4AD7 /* BaseCollectionViewController.swift in Sources */,
+				8BC34EE224CF9F1C0019E307 /* AccountTitle.swift in Sources */,
 				8B321D1C24CDD20C003E4AD7 /* UnkeyedContainer.swift in Sources */,
 				8B321D0824CDD024003E4AD7 /* AppCoordinator.swift in Sources */,
 				8B321D0424CDCDC6003E4AD7 /* AppDependency.swift in Sources */,

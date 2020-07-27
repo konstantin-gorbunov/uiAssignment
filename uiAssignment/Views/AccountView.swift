@@ -14,15 +14,13 @@ class AccountView: UIView {
         static let accountImage = UIImage(named: "first")
         static let imageLeading: CGFloat = 3.0
         static let titleLeading: CGFloat = 8.0
-        static let titleStackViewSpacing: CGFloat = 2.0
         static let amountTrailing: CGFloat = -8.0
         static let imageSize = CGSize(width: 40, height: 40)
         static let viewHeight: CGFloat = 55.0
     }
     
     private let accountImageView = UIImageView(image: Constants.accountImage)
-    private let nameLabel = UILabel()
-    private let ibanLabel = UILabel()
+    private let accountTitle = AccountTitle()
     private let amountLabel = AmountTextView()
     private let separator = UIView()
     
@@ -31,8 +29,8 @@ class AccountView: UIView {
             guard let viewModel = viewModel else {
                 return
             }
-            nameLabel.text = viewModel.name
-            ibanLabel.text = viewModel.iban
+            accountTitle.name = viewModel.name
+            accountTitle.iban = viewModel.iban
             separator.isHidden = viewModel.separator ? false : true
             amountLabel.amount = viewModel.amount
         }
@@ -77,18 +75,9 @@ class AccountView: UIView {
         amountLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: Constants.amountTrailing).isActive = true
         amountLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         
-        nameLabel.font = nameLabel.font.bold()
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        ibanLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        let titleStackView = UIStackView.init(arrangedSubviews: [nameLabel, ibanLabel])
-        titleStackView.translatesAutoresizingMaskIntoConstraints = false
-        titleStackView.axis = .vertical
-        titleStackView.distribution = .fillProportionally
-        titleStackView.spacing = Constants.titleStackViewSpacing
-        addSubview(titleStackView)
-        titleStackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        titleStackView.leadingAnchor.constraint(equalTo: accountImageView.trailingAnchor, constant: Constants.titleLeading).isActive = true
+        addSubview(accountTitle)
+        accountTitle.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        accountTitle.leadingAnchor.constraint(equalTo: accountImageView.trailingAnchor, constant: Constants.titleLeading).isActive = true
     }
 }
 
