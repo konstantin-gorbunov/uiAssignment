@@ -11,6 +11,14 @@
 		8B0500E324CDBD8000DAB4EE /* AccountsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0500E224CDBD8000DAB4EE /* AccountsCollectionViewController.swift */; };
 		8B0500EA24CDBD8400DAB4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0500E924CDBD8400DAB4EE /* Assets.xcassets */; };
 		8B0500ED24CDBD8400DAB4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0500EB24CDBD8400DAB4EE /* LaunchScreen.storyboard */; };
+		8B0E51A22507C76800C9C802 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150024CF54AA002D98FE /* HeaderViewModel.swift */; };
+		8B0E51A32507C77D00C9C802 /* AmountText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150224CF6A21002D98FE /* AmountText.swift */; };
+		8B0E51A42507C78C00C9C802 /* AmountTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150624CF8955002D98FE /* AmountTextView.swift */; };
+		8B0E51A52507C79700C9C802 /* AmountTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D150424CF7E70002D98FE /* AmountTextModel.swift */; };
+		8B0E51A62507C7A300C9C802 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14FA24CF0A5A002D98FE /* AccountView.swift */; };
+		8B0E51A72507C7AF00C9C802 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14FC24CF3FB5002D98FE /* HeaderView.swift */; };
+		8B0E51A82507C7BD00C9C802 /* LearnMoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D14FE24CF50FE002D98FE /* LearnMoreButton.swift */; };
+		8B0E51A92507C7C900C9C802 /* AccountTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC34EE124CF9F1C0019E307 /* AccountTitle.swift */; };
 		8B321D0424CDCDC6003E4AD7 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D0324CDCDC6003E4AD7 /* AppDependency.swift */; };
 		8B321D0524CDCDC6003E4AD7 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D0324CDCDC6003E4AD7 /* AppDependency.swift */; };
 		8B321D0824CDD024003E4AD7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B321D0724CDD024003E4AD7 /* AppCoordinator.swift */; };
@@ -471,9 +479,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B0E51A32507C77D00C9C802 /* AmountText.swift in Sources */,
 				8B321D0C24CDD044003E4AD7 /* Coordinator.swift in Sources */,
 				8BD7BFD024CEB4E6003296DC /* ErrorViewController.swift in Sources */,
 				8B321D1F24CDD20C003E4AD7 /* Header.swift in Sources */,
+				8B0E51A82507C7BD00C9C802 /* LearnMoreButton.swift in Sources */,
 				8BD7BFD424CEB579003296DC /* AccountGroupViewCell.swift in Sources */,
 				8B321D1D24CDD20C003E4AD7 /* UnkeyedContainer.swift in Sources */,
 				8B321D5524CEA4BE003E4AD7 /* HomeCoordinatorTests.swift in Sources */,
@@ -484,15 +494,20 @@
 				8B7D14F524CEFEF5002D98FE /* AccountViewModel.swift in Sources */,
 				8BD7BFE624CECBD6003296DC /* NotSelectableTabBarController.swift in Sources */,
 				8B321D4C24CE98FB003E4AD7 /* AppDelegate.swift in Sources */,
+				8B0E51A52507C79700C9C802 /* AmountTextModel.swift in Sources */,
 				8BD7BFDA24CECB57003296DC /* PaymentCoordinator.swift in Sources */,
+				8B0E51A62507C7A300C9C802 /* AccountView.swift in Sources */,
 				8B321D4E24CEA1C2003E4AD7 /* AppCoordinatorTests.swift in Sources */,
 				8BD7BFDD24CECB6F003296DC /* InsightsCoordinator.swift in Sources */,
 				8B321D5424CEA1EB003E4AD7 /* CSVDecoderTests.swift in Sources */,
+				8B0E51A42507C78C00C9C802 /* AmountTextView.swift in Sources */,
 				8B321D0924CDD024003E4AD7 /* AppCoordinator.swift in Sources */,
 				8BD7BFE024CECB89003296DC /* CardsCoordinator.swift in Sources */,
 				8B321D2724CDD4E7003E4AD7 /* HomeCoordinator.swift in Sources */,
 				8B321D5024CEA1D1003E4AD7 /* MockDependency.swift in Sources */,
+				8B0E51A72507C7AF00C9C802 /* HeaderView.swift in Sources */,
 				8B321D1024CDD106003E4AD7 /* DataProvider.swift in Sources */,
+				8B0E51A92507C7C900C9C802 /* AccountTitle.swift in Sources */,
 				8BD7BFD224CEB4FE003296DC /* AccountsCollectionViewController.swift in Sources */,
 				8B321D1924CDD20C003E4AD7 /* SingleValueContainer.swift in Sources */,
 				8B321D2424CDD253003E4AD7 /* Account.swift in Sources */,
@@ -503,6 +518,7 @@
 				8BD7BFD324CEB56E003296DC /* BaseCollectionViewController.swift in Sources */,
 				8BD7BFD124CEB4F5003296DC /* AccountListViewModel.swift in Sources */,
 				8B321D1B24CDD20C003E4AD7 /* KeyedContainer.swift in Sources */,
+				8B0E51A22507C76800C9C802 /* HeaderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
